@@ -1,5 +1,23 @@
 # carton snapshot format: version 1.0
 DISTRIBUTIONS
+  Outthentic-0.0.7
+    pathname: M/ME/MELEZHIK/Outthentic-0.0.7.tar.gz
+    provides:
+      Outthentic 0.000007
+      Outthentic::Story undef
+    requirements:
+      ExtUtils::MakeMaker 6.36
+      File::Temp 0
+      Outthentic::DSL v0.0.2
+      Test::Harness 0
+      Test::More 0
+  Outthentic-DSL-0.0.2
+    pathname: M/ME/MELEZHIK/Outthentic-DSL-0.0.2.tar.gz
+    provides:
+      Outthentic::DSL 0.000002
+    requirements:
+      ExtUtils::MakeMaker 6.36
+      Test::More 0
   Test-Stream-1.302020
     pathname: E/EX/EXODIST/Test-Stream-1.302020.tar.gz
     provides:
