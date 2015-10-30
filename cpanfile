@@ -1,0 +1,2 @@
+requires 'Test::Stream'
+
