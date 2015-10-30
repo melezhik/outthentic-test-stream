@@ -1,0 +1,14 @@
+begin:
+ Failed test 'These are clearly different'
+ regexp: at \S+/is-deeply/story.pl line 3\.
+ +--------+-----+----+-------+
+ | PATH   | GOT | OP | CHECK |
+ +--------+-----+----+-------+
+ | {a}    | 1   | == | 2     |
+ | {b}    | 2   | == | 3     |
+ | {c}[0] | a   | eq | x     |
+ | {c}[1] | b   | eq | y     |
+ | {c}[2] | c   | eq | z     |
+ +--------+-----+----+-------+
+end:
+
