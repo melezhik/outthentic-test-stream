@@ -1,0 +1,18 @@
+within: length:
+regexp: (\d+)
+code: cmp_ok(capture->[0], '<=', 53, "proper width of table");
+
+begin:
++------------+------------+------------+------------+
+| a          | b          | c          | d          |
++------------+------------+------------+------------+
+| aaaaaaaaaa | bbbbbbbbbb | cccccccccc | dddddddddd |
+| aaaaaaaaaa | bbbbbbbbbb | cccccccccc | dddddddddd |
+| aaaaaa     | b          | ccc        | ddddddddd  |
+|            |            |            |            |
+| AAAAAAAAAA | BBBBBBBBBB | CCCCCCCCCC | DDDDDDDDDD |
+| AAAAAAAAAA | BBBBBBBBBB | CCCCCCCCCC | DDDDDDDDDD |
+| AAAAAA     | B          | CCC        | DDDDDDDDD  |
++------------+------------+------------+------------+
+end:
+
